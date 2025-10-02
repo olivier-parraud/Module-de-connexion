@@ -2,9 +2,6 @@
 
 function connect_pdo()
 {
-
-
-
     try {
 
         // $host = "localhost";
@@ -12,11 +9,11 @@ function connect_pdo()
         // $id = "root";
         // $mdp = "root";
 
-        $pdo = new PDO("mysql:host=localhost;dbname=moodule-de-connexion", "root", "root");
+        $pdo = new PDO("mysql:host=localhost;dbname=moduleconnexion", "root", "root");
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $pdo;
-    } catch (PDOException $e) {
+    } catch (PDOException $erreur) {
         // Si une erreur se produit (connexion ou requête), tu récupères le message d'erreur
-        echo "C'est pas le bon mot de passe, tu es bidon" . $e->getMessage();
+        echo "C'est pas le bon mot de passe, tu es bidon" . $erreur->getMessage();
     }
 }
