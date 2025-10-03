@@ -1,7 +1,9 @@
-<!-- Footer -->
-<div class="footer">
+
+
+
+<footer class="footer">
     <p><i class="fas fa-code"></i> &copy; 2025 Module de Connexion - Conçu avec passion pour Ely</p>
-</div>
+</footer>
 
 <script>
     // Smooth animations and interactions
@@ -26,3 +28,5 @@
         console.log('🚀 Module de Connexion Premium chargé avec succès!');
     });
 </script>
+</body>
+</html>

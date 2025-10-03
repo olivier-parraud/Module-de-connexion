@@ -1,7 +1,7 @@
+<?php 
+include "layout/header.php" ?> <!-- Inclusion du header avec HTML, CSS et balises meta -->
+
 <?php
-
-session_start(); // Démarrage de la session pour pouvoir utiliser $_SESSION
-
 require_once "./config/db.php"; // Inclusion du fichier de configuration de base de données
 
 // $sql = ("INSERT INTO utilisateurs (login,nom,prenom,password) VALUES (?,?,?,?)"); // Requête SQL avec placeholders sécurisés
@@ -40,25 +40,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { // Vérification que le formulaire a
 ?>
 
 <!-- Page de connexion des utilisateurs -->
-<h1>CONNEXION</h1>
 
-<!-- Affichage conditionnel des messages d'erreur -->
-<?php if (!empty($error)): ?>
-    <div> <?php echo $error; ?> </div>
-<?php endif; ?>
+<div class="container">
+    <h1>CONNEXION</h1>
 
-<!-- Formulaire de connexion soumis vers la même page -->
-<form action="" method="POST">
+    <!-- Affichage conditionnel des messages d'erreur -->
+    <?php if (!empty($error)): ?>
+        <div class="error-message"><?php echo $error; ?></div>
+    <?php endif; ?>
 
-    <!-- Champ pour saisir le nom d'utilisateur -->
-    <label for="login">Nom d'utilisateur</label>
-    <input placeholder="Nom d'utilisateur" type="text" id="login" name="login" required>
+    <!-- Formulaire de connexion soumis vers la même page -->
+    <form action="" method="POST">
 
-    <!-- Champ pour saisir le mot de passe -->
-    <label for="password"> Mot de passe </label>
-    <input placeholder="Mot de passe" type="password" id="password" name="password" required>
+        <!-- Champ pour saisir le nom d'utilisateur -->
+        <div class="form-group">
+            <label for="login">Nom d'utilisateur</label>
+            <input placeholder="Entrez votre nom d'utilisateur" type="text" id="login" name="login" required>
+        </div>
 
-    <!-- Bouton de soumission du formulaire de connexion -->
-    <button type="submit">Se Connecter</button>
+        <!-- Champ pour saisir le mot de passe -->
+        <div class="form-group">
+            <label for="password">Mot de passe</label>
+            <input placeholder="Entrez votre mot de passe" type="password" id="password" name="password" required>
+        </div>
 
-</form>
+        <!-- Bouton de soumission du formulaire de connexion -->
+        <button type="submit">Se Connecter</button>
+
+    </form>
+</div>
+
+<?php include "layout/footer.php"; ?> <!-- Inclusion du footer avec la fermeture HTML -->
