@@ -3,7 +3,6 @@
     <p><i class="fas fa-code"></i> &copy; 2025 Module de Connexion - Conçu avec passion pour Ely</p>
 </div>
 
-
 <script>
     // Smooth animations and interactions
     document.addEventListener('DOMContentLoaded', function() {
