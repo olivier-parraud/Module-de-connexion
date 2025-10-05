@@ -1,2 +1,3 @@
 <?php include "layout/header.php" ?> <!-- Inclusion du header avec HTML, CSS et balises meta -->
 
+<?php include "layout/footer.php"; ?> <!-- Inclusion du footer avec la fermeture HTML -->

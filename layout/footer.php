@@ -1,32 +1,23 @@
-
-
-
-<footer class="footer">
-    <p><i class="fas fa-code"></i> &copy; 2025 Module de Connexion - Conçu avec passion pour Ely</p>
+<!-- Pied de page en style verre, cohérent avec la navbar -->
+<footer class="site-footer">
+    <div class="footer-inner">
+        <!-- Marque / logo -->
+        <div class="footer-brand">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Module de Connexion</span>
+        </div>
+        <!-- Liens utiles -->
+        <ul class="footer-links">
+          
+            
+        </ul>
+        <!-- Copyright dynamique -->
+        <p class="copyright">
+            <i class="fas fa-code"></i>
+            <span>&copy; <?php echo date('Y'); ?> Module de Connexion. Tous droits réservés.</span>
+        </p>
+    </div>
 </footer>
 
-<script>
-    // Smooth animations and interactions
-    document.addEventListener('DOMContentLoaded', function() {
-        // Add sparkle effect on hover
-        const buttons = document.querySelectorAll('.nav-button');
-        buttons.forEach(button => {
-            button.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-8px) scale(1.05)';
-            });
-            button.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
-            });
-        });
-
-        // Typing effect for title (optional enhancement)
-        const title = document.querySelector('.header h1');
-        const originalText = title.innerHTML;
-        title.style.borderRight = '3px solid white';
-
-        // Add some interactivity
-        console.log('🚀 Module de Connexion Premium chargé avec succès!');
-    });
-</script>
 </body>
 </html>

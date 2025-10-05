@@ -48,7 +48,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") { // Vérification que le formulaire 
 ?>
 
 <!-- Page d'inscription des nouveaux utilisateurs -->
+<!-- Wrapper de centrage : centre verticalement et horizontalement le bloc -->
+<div class="page-center">
+<!-- Carte principale (effet verre, ombre, rayon) -->
 <div class="container">
+
+
     <h1>INSCRIPTION</h1>
     <p>Créez votre compte</p>
 
@@ -94,6 +99,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") { // Vérification que le formulaire 
         <button type="submit">S'inscrire</button>
 
     </form>
+</div>
 </div>
 
 <?php include "layout/footer.php"; ?> <!-- Inclusion du footer avec la fermeture HTML -->
